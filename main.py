@@ -1,5 +1,5 @@
-import discord
-from discord.ext import commands
+import nextcord
+from nextcord.ext import commands
 import logging
 import random
 
@@ -30,7 +30,7 @@ class CuteGifs(commands.Cog):
             idx = random.randrange(len(self._hugs))
         self._lastHUG = idx
 
-        embed = discord.Embed()
+        embed = nextcord.Embed()
         embed.set_image(url=self._hugs[idx])
         embed.color = 0x761cc9
 
