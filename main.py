@@ -46,5 +46,5 @@ class CuteGifs(commands.Cog):
 
 
 
-def setup(bot):
+def setup(bot,**kwargs):
     bot.add_cog(CuteGifs(bot))
